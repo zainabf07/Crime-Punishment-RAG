@@ -1,0 +1,59 @@
+WEEK 8 - DAY 3 RAG EVALUATION REPORT
+
+Embedding Model:
+sentence-transformers/all-MiniLM-L6-v2
+
+Vector Database:
+ChromaDB
+
+Collection:
+crime_500
+
+Number of Documents:
+2856
+
+LLM:
+Gemini 3.6 Flash
+
+Top-K:
+3
+
+
+QUESTION 1:
+Why did Raskolnikov feel guilty?
+
+Evaluation:
+- Retrieval: Relevant
+- Answer grounded in retrieved context: Yes
+- Answer addresses question: Yes
+
+Observation:
+The retrieved passage discusses Raskolnikov's wounded pride,
+shame and conscience and provides relevant evidence for the answer.
+
+
+QUESTION 2:
+Why did Raskolnikov commit the murder?
+
+Evaluation:
+- Retrieval: Relevant / To be reviewed
+- Answer grounded in retrieved context: Yes
+- Answer addresses question: Yes
+
+Observation:
+The retrieved passages provide evidence related to Raskolnikov's
+motives and the ideas surrounding the murder.
+
+
+OVERALL RESULT:
+
+The RAG pipeline successfully performs:
+
+Question
+→ Query Embedding
+→ Chroma Retrieval
+→ Context Construction
+→ Gemini Generation
+
+The system successfully produces answers using retrieved
+passages from Crime and Punishment.
