@@ -1,0 +1,18 @@
+# Core Deep Learning
+torch
+
+# NLP and Embeddings
+transformers
+sentence-transformers
+
+# Vector Database
+chromadb
+
+# Google Gemini API
+google-genai
+
+# Environment Variables
+python-dotenv
+
+# Web Application
+streamlit
